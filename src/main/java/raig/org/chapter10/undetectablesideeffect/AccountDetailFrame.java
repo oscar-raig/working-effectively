@@ -6,8 +6,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-import static com.sun.tools.javac.tree.JCTree.Tag.SL;
-import static javafx.application.ConditionalFeature.MEDIA;
 
 public class AccountDetailFrame extends Frame  implements ActionListener, WindowListener{
 
