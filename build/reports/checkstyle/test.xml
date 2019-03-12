@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.4">
+<file name="/Users/oscarraig/git/git-public/working-effectively/src/test/java/raig/org/chapter9/irritatingparameter/CreditValidatorShould.java">
+</file>
+<file name="/Users/oscarraig/git/git-public/working-effectively/src/test/java/raig/org/chapter9/irritatingparameter/nullobjectpattern/EmployeeIdShould.java">
+</file>
+<file name="/Users/oscarraig/git/git-public/working-effectively/src/test/java/raig/org/chapter9/irritatingparameter/nullobjectpattern/EmployeeManagerShould.java">
+</file>
+</checkstyle>
