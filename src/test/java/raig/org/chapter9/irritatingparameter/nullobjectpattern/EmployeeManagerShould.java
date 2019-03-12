@@ -1,15 +1,13 @@
 package raig.org.chapter9.irritatingparameter.nullobjectpattern;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.mockito.Mockito.when;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.Mockito;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.internal.bytebuddy.matcher.ElementMatchers.is;
 
 public class EmployeeManagerShould {
 
@@ -18,7 +16,7 @@ public class EmployeeManagerShould {
   private static final String NON_EXISITING_ID = "2";
   private  Finder finder;
 
-  @Before
+  @BeforeEach
   public void setUp() {
     List<Employee> employeeList = new ArrayList<>();
     employeeList.add(new Employee(new EmployeeId(A_ID)));
@@ -45,7 +43,7 @@ public class EmployeeManagerShould {
 
     List<EmployeeId> listEmployeeId = createEmployeeIds();
     int employeePaid  = employeeManager.countEmployeePaid(listEmployeeId);
-    assertThat( employeePaid, is(1));
+    assertThat( employeePaid).isEqualTo(1);
 
   }
 

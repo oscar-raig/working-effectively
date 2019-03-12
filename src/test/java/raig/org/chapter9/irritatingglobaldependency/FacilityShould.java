@@ -1,7 +1,6 @@
 package raig.org.chapter9.irritatingglobaldependency;
 
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class FacilityShould {
 
