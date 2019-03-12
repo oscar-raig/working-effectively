@@ -10,16 +10,16 @@ public class Helpful {
 
   private static final int MIN_LEN = 10;
 
-  public List getKSRStreams(HttpFileCollection files) {
+  public List getKsrStreams(HttpFileCollection files) {
 
-      ArrayList<Stream> list = new ArrayList<>();
-      for( HttpPostedFile file : files.values()) {
-        if (file.FileName.endsWith(".ksr") ||
-          (file.FileName.endsWith(".txt")
+    ArrayList<Stream> list = new ArrayList<>();
+    for (HttpPostedFile file : files.values()) {
+      if (file.FileName.endsWith(".ksr")
+          || (file.FileName.endsWith(".txt")
           && file.ContentLength > MIN_LEN)) {
-          list.add(file.InputStream);
-        }
+        list.add(file.InputStream);
       }
-    return list;
     }
+    return list;
+  }
 }

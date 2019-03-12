@@ -43,7 +43,7 @@ public final class HttpFileCollection implements Map<String,HttpPostedFile> {
   }
 
   @Override
-  public void putAll(Map<? extends String, ? extends HttpPostedFile> m) {
+  public void putAll(Map<? extends String, ? extends HttpPostedFile> map) {
 
   }
 
